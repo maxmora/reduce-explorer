@@ -1,5 +1,4 @@
 // TODO destructure fields in `step`
-export const addStep = (step) => ({
-	type: 'ADD_STEP',
-	step,
+export const incrementStep = () => ({
+	type: 'INCREMENT_STEP',
 })

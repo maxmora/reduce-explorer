@@ -1,14 +1,12 @@
-import { connect } from "react-redux";
+import { connect } from 'react-redux';
 
-import { addStep } from "../actions";
-import { StepList } from "../components/StepList";
+import { StepList } from '../components/StepList';
+import { incrementStep } from '../actions';
 
-const mapStateToProps = state => ({
-	steps: state.steps
-});
+const mapStateToProps = (stepState) => (stepState);
 
 const mapDispatchToProps = {
-	addStep,
+	incrementStep,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(StepList);
